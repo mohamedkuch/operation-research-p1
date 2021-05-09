@@ -72,16 +72,16 @@ vector<vector<string>> ReadInputData(string filepPath)
 int main()
 {
     // TODO MAYBE Use small test cases first (large cases might need some time to load data)
-    for (int i = 1; i <= 16; i++)
+    for (int i = 1; i <= 2; i++)
     {
         // TODO MAYBE Adjust path to testcases
-        string directory = "..\\..\\Tests\\Testcases\\";
+        string directory = "/Users/mohamedks/CLionProjects/praktikum1/Testcases/";
         string filename = "Test" + std::to_string(i) + ".txt";
 
         std::cout << "\n" + filename << std::endl;
 
         // read data
-        vector<vector<string>> RawData = ReadInputData(directory + filename);
+        vector<vector<string>> RawData = ReadInputData(  directory + filename);
 
         // fill data structures
 
